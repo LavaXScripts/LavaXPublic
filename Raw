@@ -6,7 +6,7 @@ local Blatant = Window:NewTab("Blatant")
 local BlatantSection = Blatant:NewSection("Blatant")
 
 
-BlatantSection:NewButton("InfJumps", "Good Crossing Bases That Are CloseTogether", function()
+BlatantSection:NewButton("InfJumps", "Good Crossing Bases That Are Close Together", function()
     loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Infinite%20Jump.txt"))()
 end)
 
