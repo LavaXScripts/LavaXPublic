@@ -1,65 +1,60 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("LavaX Public/Free", "BloodTheme")
 
-— Bedwars
-local Bedwars = Window:NewTab("Bedwars")
-local BedwarsSection = Bedwars:NewSection("Bedwars")
+— Blatant
+local Blatant = Window:NewTab("Blatant")
+local BlatantSection = Blatant:NewSection("Blatant")
 
-BedwarsSection:NewLabel("Blatant")
 
-BedwarsSection:NewButton("InfJumps", "Good Crossing Bases That Are CloseTogether", function()
+BlatantSection:NewButton("InfJumps", "Good Crossing Bases That Are CloseTogether", function()
     loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Infinite%20Jump.txt"))()
 end)
 
 
-BedwarsSection:NewButton("Nuker", "Automatically Breaks Beds", function()
+BlatantSection:NewButton("Nuker", "Automatically Breaks Beds", function()
     print("Clicked")
 end)
 
 
-BedwarsSection:NewButton("Speed", "Makes You Go Zoom Zoom", function()
-    print("Clicked")
-end)
-
-
-BedwarsSection:NewSlider("Slide To 23 Speed", "Makes You Go Zoom Zoom When Max",23, 0, function(s) (MaxValue) 23 | 0 (MinValue)
+BlatantSection:NewSlider("Slide To 23 Speed", "Makes You Go Zoom Zoom When Max",23, 0, function(s) (MaxValue) 23 | 0 (MinValue)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
 
 
-BedwarsSection:NewButton("Velocity", " Disables  Knockback", function()
+BlatantSection:NewButton("Velocity", " Disables  Knockback", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/LavaXScripts/Velocity/main/Velocity",true))();
 end)
 
 
-BedwarsSection:NewLabel("Other Scripts")
+local Scripts  = Window:NewTab("Scripts")
+local ScriptsSection = Scripts:NewSection("Scripts")
 
 
-BedwarsSection:NewButton("Darkrai X", "Opens Darkrai X Hub", function()
+ScriptsSection:NewButton("Darkrai X", "Opens Darkrai X Hub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Bedwars", true))()
 end)
 
 
-BedwarsSection:NewButton("VapeV4", "Opens VapeV4 Hub", function()
+ScriptsSection:NewButton("VapeV4", "Opens VapeV4 Hub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
 end)
 
 
-BedwarsSection:NewButton("RektSky", "Opens RektSky Hub", function()
+ScriptsSections:NewButton("RektSky", "Opens RektSky Hub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/8pmX8/rektsky4roblox/main/mainscript.lua"))()
 end)
 
 
-BedwarsSection:NewButton("ApeV6", "Opens ApeV6 Hub", function()
+ScriptsSection:NewButton("ApeV6", "Opens ApeV6 Hub", function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/Fazedrab/ApeV6ForRoblox/main/NewMainScript.lua", true))()
 end)
 
 
-BedwarsSection:NewButton("Sape", "Opens Sape Hub", function()
+ScriptsSection:NewButton("Sape", "Opens Sape Hub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/vodxn/sape/main/Initiate.lua"))()
 end)
 
 
-BedwarsSection:NewButton("Monkey Hub ", "Opens Monkey Hub", function()
+ScriptsSection:NewButton("Monkey Hub ", "Opens Monkey Hub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeyScripts/main/BedWarsMonkey.lua"))()
-end)
+end
