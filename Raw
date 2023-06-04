@@ -6,7 +6,7 @@ local Blatant = Window:NewTab("Blatant")
 local BlatantSection = Blatant:NewSection("Blatant")
 
 
-BlatantSection:NewButton("InfJumps", "Good Crossing Bases That Are Close Together", function()
+BlatantSection:NewButton("InfJumps", "Good Crossing Bases That Are CloseTogether", function()
     loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Infinite%20Jump.txt"))()
 end)
 
@@ -23,4 +23,38 @@ end)
 
 BlatantSection:NewButton("Velocity", " Disables  Knockback", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/LavaXScripts/Velocity/main/Velocity",true))();
+end)
+
+
+local Scripts  = Window:NewTab("Scripts")
+local ScriptsSection = Scripts:NewSection("Scripts")
+
+
+ScriptsSection:NewButton("Darkrai X", "Opens Darkrai X Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Bedwars", true))()
+end)
+
+
+ScriptsSection:NewButton("VapeV4", "Opens VapeV4 Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end)
+
+
+ScriptsSections:NewButton("RektSky", "Opens RektSky Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/8pmX8/rektsky4roblox/main/mainscript.lua"))()
+end)
+
+
+ScriptsSection:NewButton("ApeV6", "Opens ApeV6 Hub", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Fazedrab/ApeV6ForRoblox/main/NewMainScript.lua", true))()
+end)
+
+
+ScriptsSection:NewButton("Sape", "Opens Sape Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/vodxn/sape/main/Initiate.lua"))()
+end)
+
+
+ScriptsSection:NewButton("Monkey Hub ", "Opens Monkey Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeyScripts/main/BedWarsMonkey.lua"))()
 end)
